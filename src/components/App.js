@@ -483,7 +483,7 @@ getPunkOwner = async (punkIndex) => {
                   )}
               />
               <Route path='/nftrade' component={() => {
-                   window.location.href = 'https://opensea.io/collection/doggos-c1dhgb3hft';
+                   window.location.href = 'https://opensea.io/collection/meme-genesis-1';
                    return null;
               }}/>
 
