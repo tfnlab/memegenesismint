@@ -3,7 +3,7 @@ import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 import Web3 from "web3";
 
-import BurningMeta from "../abis/BurningMeta.json";
+import MemeGenesis from "../abis/MemeGenesis.json";
 
 
 import AllCryptoBoys from "./AllCryptoBoys/AllCryptoBoys";
@@ -254,7 +254,7 @@ claimPunk = async (punkIndex) => {
     const price = window.web3.utils.toWei("0.01", "Ether") * punkIndex;
     this.setState({ loading: true });
       this.state.cryptoBoysContract.methods
-        .publicSaleMint(punkIndex)
+        .paidMint(punkIndex)
         .send({ from: this.state.accountAddress, value: price })
         .on("confirmation", () => {
           localStorage.setItem(this.state.accountAddress, new Date().getTime());
@@ -264,7 +264,7 @@ claimPunk = async (punkIndex) => {
   }else{
     this.setState({ loading: true });
       this.state.cryptoBoysContract.methods
-        .freeMint(punkIndex)
+        .mint(punkIndex)
         .send({ from: this.state.accountAddress})
         .on("confirmation", () => {
           localStorage.setItem(this.state.accountAddress, new Date().getTime());
