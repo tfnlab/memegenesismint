@@ -53,20 +53,23 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     <div>
       <div className="jumbotron">
         <h1 className="display-5">
-          Burbank Live
+          Meme Genesis
         </h1>
-        Introducing the Doggos of Burbank, an NFT collection featuring beautiful and unique AI-generated dog pictures.
+        In the depths of the metaverse, there exists a world unlike any other. It's a land where the currency is not measured in dollars or euros, but in memes. In this place, the memes flow like a river, and those who can create the best ones hold the keys to the kingdom.
+        <hr className="my-2" />
+        It all started when a group of intrepid meme-makers decided to create their own world, a place where they could be free to create and share their memes without fear of censorship or judgment. They called it MemeLand, and it quickly became the go-to destination for anyone looking to get their meme fix.
+        <hr className="my-2" />
+        But it wasn't just a place for sharing memes. MemeLand was a world of its own, with its own customs, traditions, and even its own economy. The most popular memes became the most valuable currency, and those who could create the best ones were treated like royalty.
+        <hr className="my-2" />
+        The inhabitants of MemeLand were a quirky bunch, but they all shared a common bond - a love of memes. They would spend their days creating new and hilarious content, sharing it with each other, and engaging in fierce competitions to see who could come up with the funniest material.
+        <hr className="my-2" />
+        But MemeLand was not without its challenges. There were always those who sought to cheat the system, creating fake memes or stealing the work of others. And there were those who tried to monopolize the meme market, hoarding all the best content for themselves.
+        <hr className="my-2" />
+        Despite these challenges, MemeLand continued to thrive, a beacon of creativity and humor in a world that often seemed bleak and dreary. It was a place where the power of laughter and the joy of creation reigned supreme, and where the only thing that really mattered was the ability to make people laugh.
+        <hr className="my-2" />
+        And so, in the heart of the metaverse, MemeLand continued to flourish, a shining example of what could be accomplished when people came together to share their passions and celebrate the things that truly make life worth living.
         <hr className="my-4" />
-
-        These one-of-a-kind digital artworks were created by our talented team of artists, using the latest in machine learning technology. Each piece is a unique representation of the many furry friends that call Burbank home.
-        <hr className="my-4" />
-
-        But this collection is more than just beautiful art. By purchasing an NFT from the Doggos of Burbank collection, you'll be supporting our local news service and helping us to continue providing essential coverage to the community.
-        <hr className="my-4" />
-        Get your own piece of history and support your local news service at the same time. Collect the Doggos of Burbank today.
-
-        <hr className="my-4" />
-        <a href="https://burbanklive.com" >BurbankLive.com</a>
+        <a href="https://memegenesis.com" >MemeGenesis.com</a>
         <hr className="my-4" />
         <img src="images/preview.gif" width="100%" />
         <hr className="my-4" />
@@ -87,7 +90,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <div className="container">
         <hr className="my-4" />
-            Burbank Live &copy; 2021 All rights reserved.
+            Meme Genesis &copy; 2023 All rights reserved.
         <hr className="my-4" />
       </div>
     </div>
