@@ -130,7 +130,7 @@ class App extends Component {
 //        if (networkData) {
           this.setState({ loading: true });
 
-          const { abi } = require('../abis/Doggos.json');
+          const { abi } = require('../abis/MemeGenesis.json');
           var smart_contract_interface = new web3.eth.Contract(abi, '0x06941CDdc03F45ff77817b40F472770A9a730aec')
 
 
