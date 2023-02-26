@@ -131,7 +131,7 @@ class App extends Component {
           this.setState({ loading: true });
 
           const { abi } = require('../abis/Doggos.json');
-          var smart_contract_interface = new web3.eth.Contract(abi, '0xA99e65EF3D88182C48bD207822617dBa5587f4F1')
+          var smart_contract_interface = new web3.eth.Contract(abi, '0x06941CDdc03F45ff77817b40F472770A9a730aec')
 
 
           const cryptoBoysContract = smart_contract_interface;
@@ -250,6 +250,7 @@ claimPunk = async (punkIndex) => {
     .totalSupply()
     .call();
 
+  if (totalSupply > 5000){
     const price = window.web3.utils.toWei("0.01", "Ether") * punkIndex;
     this.setState({ loading: true });
       this.state.cryptoBoysContract.methods
@@ -260,6 +261,17 @@ claimPunk = async (punkIndex) => {
           this.setState({ loading: false });
           window.location.reload();
         });
+  }else{
+    this.setState({ loading: true });
+      this.state.cryptoBoysContract.methods
+        .freeMint(punkIndex)
+        .send({ from: this.state.accountAddress})
+        .on("confirmation", () => {
+          localStorage.setItem(this.state.accountAddress, new Date().getTime());
+          this.setState({ loading: false });
+          window.location.reload();
+        });
+  }
 };
 
 
