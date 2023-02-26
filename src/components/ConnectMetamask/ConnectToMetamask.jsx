@@ -71,8 +71,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
         <a href="https://memegenesis.com" >MemeGenesis.com</a>
         <hr className="my-4" />
-        <img src="images/preview.gif" width="100%" />
-        <hr className="my-4" />
         <button
           onClick={connectToMetamask}
           className="btn btn-primary d-flex align-items-center"
